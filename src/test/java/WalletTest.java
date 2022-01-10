@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
 public class WalletTest {
     private Wallet wallet;
     private CreditCard creditCard;
@@ -13,7 +12,7 @@ public class WalletTest {
     @Before()
     public void before(){
         wallet = new Wallet("Isa's Wallet");
-        creditCard = new CreditCard("1111222233334444", "12/23", 234);
+        creditCard = new CreditCard("1111222233334444", 011223, 234);
         debitCard = new DebitCard("1111222233334444", 909090, 12345678, "12/23", 234);
         loyaltyCard = new LoyaltyCard("123456787890", "Harrid's Stores");
         ticket = new Ticket("AB12345", "QWERTY123456", "26/01/2020");

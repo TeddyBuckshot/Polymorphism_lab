@@ -1,36 +1,21 @@
-public class DebitCard implements IScan {
-    private String cardNumber;
-    private int sortCode;
+public class DebitCard extends Card {
+    private String sortCode;
     private int accountNumber;
-    private String expiryDate;
-    private int securityNumber;
 
-    public DebitCard(String cardNumber, int sortCode, int accountNumber, String expiryDate, int securityNumber) {
-        this.cardNumber = cardNumber;
+
+    public DebitCard(String cardNumber, int expiryDate, int securityNumber, String sortCode, int accountNumber) {
+        super(cardNumber, expiryDate, securityNumber);
         this.sortCode = sortCode;
         this.accountNumber = accountNumber;
-        this.expiryDate = expiryDate;
-        this.securityNumber = securityNumber;
     }
 
-    public String getCardNumber() {
-        return this.cardNumber;
-    }
 
-    public int getSortCode() {
+    public String getSortCode() {
         return this.sortCode;
     }
 
     public int getAccountNumber() {
         return this.accountNumber;
-    }
-
-    public String getExpiryDate() {
-        return this.expiryDate;
-    }
-
-    public int getSecurityNumber() {
-        return this.securityNumber;
     }
 
     public String scan() {

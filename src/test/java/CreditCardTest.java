@@ -8,7 +8,7 @@ public class CreditCardTest {
 
     @Before
     public void before() {
-        creditCard = new CreditCard("1111222233334444", "12/23", 234);
+        creditCard = new CreditCard("1111222233334444", 011223, 234);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class CreditCardTest {
 
     @Test
     public void canGetExpiryDate() {
-        assertEquals("12/23", creditCard.getExpiryDate());
+        assertEquals(4755, creditCard.getExpiryDate());
     }
 
     @Test

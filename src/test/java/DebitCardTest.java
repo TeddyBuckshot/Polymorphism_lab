@@ -18,22 +18,22 @@ public class DebitCardTest {
 
     @Test
     public void canGetSortCode() {
-        assertEquals(909090, debitCard.getSortCode());
+        assertEquals("12/23", debitCard.getSortCode());
     }
 
     @Test
     public void canGetAccountNumber() {
-        assertEquals(12345678, debitCard.getAccountNumber());
+        assertEquals(234, debitCard.getAccountNumber());
     }
 
     @Test
     public void canGetExpiryDate() {
-        assertEquals("12/23", debitCard.getExpiryDate());
+        assertEquals(909090, debitCard.getExpiryDate());
     }
 
     @Test
     public void canGetSecurityNumber() {
-        assertEquals(234, debitCard.getSecurityNumber());
+        assertEquals(12345678, debitCard.getSecurityNumber());
     }
 
     @Test public void canScanCard() {
