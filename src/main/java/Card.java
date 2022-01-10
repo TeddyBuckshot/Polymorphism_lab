@@ -21,6 +21,8 @@ public abstract class Card implements IScan {
     public int getSecurityNumber() {
         return this.securityNumber;
     }
+
+    public abstract String scan();
 }
 
 
